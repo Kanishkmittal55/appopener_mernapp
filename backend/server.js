@@ -13,6 +13,7 @@ app.use(express.json()) // In express we have body parser for raw json
 app.use(express.urlencoded({extended:false}))
 
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 // By using this erroHandler you have overided the default express errorHandler
